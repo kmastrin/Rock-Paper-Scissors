@@ -59,18 +59,18 @@ const game = () => {
     const winner = document.querySelector(".winner");
   
     if (playerChoice === computerChoice) {
-      winner.textContent = "It is a tie";
+      winner.textContent = "A Tie!";
       return;
     }
   
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
-        winner.textContent = "Player Wins";
+        winner.textContent = "Player Wins!";
         pScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Computer Wins";
+        winner.textContent = "Computer Wins!";
         cScore++;
         updateScore();
         return;
@@ -79,12 +79,12 @@ const game = () => {
   
     if (playerChoice === "paper") {
       if (computerChoice === "scissors") {
-        winner.textContent = "Computer Wins";
+        winner.textContent = "Computer Wins!";
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Player Wins";
+        winner.textContent = "Player Wins!";
         pScore++;
         updateScore();
         return;
@@ -93,12 +93,12 @@ const game = () => {
 
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
-        winner.textContent = "Computer Wins";
+        winner.textContent = "Computer Wins!";
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Player Wins";
+        winner.textContent = "Player Wins!";
         pScore++;
         updateScore();
         return;
